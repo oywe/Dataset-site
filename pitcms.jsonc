@@ -1,13 +1,23 @@
 {
-  "collections": {
-    "posts": {
-      "type": "content",
+  "schemaVersion": 1,
+  "collections": [
+    {
+      "name": "posts",
+      "label": "ブログ記事",
       "path": "content/posts",
-      "fields": {
-        "title": { "type": "string", "required": true },
-        "body": { "type": "markdown", "required": true },
-        "date": { "type": "date", "required": true }
+      "extension": "md",
+      "fields": [
+        { "name": "title", "type": "text", "label": "タイトル", "required": true },
+        { "name": "slug", "type": "text", "label": "スラッグ", "required": true },
+        { "name": "content", "type": "richtext", "label": "本文" },
+        { "name": "publishedAt", "type": "date", "label": "公開日時", "includeTime": true }
+      ],
+      "layout": [["title"], ["slug"], ["content"]],
+      "pit": {
+        "title": "title",
+        "body": "content",
+        "createdAt": "publishedAt"
       }
     }
-  }
+  ]
 }
