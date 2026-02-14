@@ -1,0 +1,13 @@
+{
+  "collections": {
+    "posts": {
+      "type": "content",
+      "path": "content/posts",
+      "fields": {
+        "title": { "type": "string", "required": true },
+        "body": { "type": "markdown", "required": true },
+        "date": { "type": "date", "required": true }
+      }
+    }
+  }
+}
