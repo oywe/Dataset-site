@@ -9,7 +9,7 @@
       "fields": [
         { "name": "title", "type": "text", "label": "タイトル", "required": true },
         { "name": "slug", "type": "text", "label": "スラッグ", "required": true },
-        { "name": "content", "type": "richtext", "label": "本文" },
+        { "name": "content", "type": "textarea", "label": "本文" },
         { "name": "publishedAt", "type": "date", "label": "公開日時", "includeTime": true }
       ],
       "layout": [["title"], ["slug"], ["content"]],
