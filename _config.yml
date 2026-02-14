@@ -1,6 +1,4 @@
 title: Kasosuta dataset blog
 author: ncyo
 markdown: kramdown
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-  - jekyll-remote-theme
+thema: jekyll-theme-cayman
