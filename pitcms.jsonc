@@ -4,7 +4,7 @@
     {
       "name": "posts",
       "label": "ブログ記事",
-      "path": "content/posts",
+      "path": "_posts",
       "extension": "md",
       "fields": [
         { "name": "title", "type": "text", "label": "タイトル", "required": true },
