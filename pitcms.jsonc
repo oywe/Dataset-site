@@ -12,7 +12,6 @@
         { "name": "content", "type": "textarea", "label": "本文" },
         { "name": "publishedAt", "type": "date", "label": "公開日時", "includeTime": true }
       ],
-      "layout": [["title"], ["slug"], ["content"]],
       "pit": {
         "title": "title",
         "body": "content",
