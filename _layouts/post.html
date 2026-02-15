@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-<script>
-      const shareData = {title:"Kasosuta Database Blog",text:"",url:location.href}
-      async function share(){await navigator.share(shareData)}
-</script>
+
 <article>
   <h2>{{ page.title }}</h2>
   <button onclick="share()">共有する</button>
