@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-
+<script>
+      const shareData = {title:"はちのへぶろぐ",text:"気ままにいこう",url:location.href}
+      async function share(){await navigator.share(shareData)}
+</script>
 <article>
   <h2>{{ page.title }}</h2>
+  <button onclick="share()">共有する</button>
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
   <div>
     {{ content }}
