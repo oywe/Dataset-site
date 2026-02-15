@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="fediverse:creator" content="@364@vivaldi.net">
-    {% seo %}>
+    {% seo %}
+    <script async>
+      const shareData = {title:"Kasosuta Database Blog",text:"",url:location.href}
+      async function share(){await navigator.share(shareData)}
+    </script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="7c179c15-6564-4bce-90ad-5ab4a4006025"></script>
     <!-- Cayman の CSS 読み込み -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
