@@ -1,0 +1,43 @@
+{
+  "collections": [
+    {
+      "name": "posts",
+      "label": "ブログ",
+      "path": "_posts",
+      "format": "md",
+      "slug": "{{year}}-{{month}}-{{day}}-{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "タイトル",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "slug",
+          "label": "スラッグ",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "date",
+          "label": "日付",
+          "type": "datetime",
+          "required": true
+        },
+        {
+          "name": "published",
+          "label": "公開",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "name": "body",
+          "label": "本文",
+          "type": "markdown",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
