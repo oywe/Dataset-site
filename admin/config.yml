@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: oywe/Dataset-site
+  branch: main
+
+collections:
+  - name: "posts"
+    label: "ブログ"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "タイトル", name: "title", widget: "string" }
+      - { label: "スラッグ", name: "slug", widget: "string" }
+      - { label: "日付", name: "date", widget: "datetime" }
+      - { label: "公開", name: "published", widget: "boolean", default: true }
+      - { label: "本文", name: "body", widget: "markdown" }
